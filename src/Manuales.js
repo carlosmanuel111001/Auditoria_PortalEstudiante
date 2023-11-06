@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 // Importa íconos o imágenes para los enlaces de manuales
 import manualUsuarioIcon from "./imagenes/manual.png";
-import manualUsuarioPDF from "./pdfs/Información_general_Auditoria.pdf";
+import manualUsuarioPDF from "./pdfs/Manual_Usuario_PE.pdf";
 import manualTecnicoIcon from "./imagenes/manual.png";
+import manualTecnicoPDF from "./pdfs/Manual-Navegacion.pdf";
 import guiaInicioRapidoIcon from "./imagenes/manual.png";
 import menuIcon from "./imagenes/menu.png";
 
@@ -102,15 +103,17 @@ function Manuales() {
         </li>
         <li>
           <a
-            href="/manuales/manual-tecnico"
+            href={manualTecnicoPDF} // Sustituye con la URL del PDF del manual técnico
+            target="_blank"
+            rel="noopener noreferrer"
             style={manualesStyles.enlaceManual}
           >
             <img
               src={manualTecnicoIcon}
-              alt="Manual Técnico"
+              alt="Manual Navegación"
               style={manualesStyles.enlaceManualIcon}
             />
-            Manual Técnico
+            Manual Navegación (PDF)
           </a>
         </li>
         <li>

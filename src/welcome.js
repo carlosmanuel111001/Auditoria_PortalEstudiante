@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './imagenes/descripcion.png';
+import logo from './imagenes/logo.jpeg';
 
 function Bienvenida() {
   return (
